@@ -1,0 +1,20 @@
+/* 
+  Localizable.strings
+  SwiftUI Developement
+
+  Created by Attique Ullah on 07/05/2023.
+  
+*/
+"Rewards" = "Rewards";
+"Expiration date" = "Expiration date";
+"12/23" = "12/23";
+"**** 9901" = "**** 9901";
+"Current Blance" = "Current Blance";
+"Balance as of July 26, 2021" = "Balance as of July 26, 2021";
+"Latest Transactions" = "Latest Transactions";
+"Transactions Details" = "Transactions Details";
+"Congratulations on earning your bird!" = "Congratulations on earning your bird!";
+"Status" = "Status";
+"Date" = "Date";
+"Loading.." = "Loading..";
+"Failed. Tap to retry." = "Failed. Tap to retry.";

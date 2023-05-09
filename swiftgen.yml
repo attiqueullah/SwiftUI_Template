@@ -1,0 +1,33 @@
+# 1
+input_dir: SwiftUI Developement/
+# 2
+output_dir: SwiftUI Developement/Generated/
+## XCAssets
+xcassets:
+  inputs:
+    - Assets.xcassets
+    - Colors.xcassets
+  outputs:
+    templateName: swift5
+    params:
+       forceProvidesNamespaces: true
+       forceFileNameEnum: true
+    output: XCAssets+Generated.swift
+## Strings
+strings:
+  inputs:
+    # 1
+    - en.lproj
+  outputs:
+    - templateName: structured-swift5
+      # 2
+      params:
+        publicAccess: true
+      output: Strings+Generated.swift
+## Fonts
+fonts:
+  inputs:
+  - Fonts
+  outputs:
+    - templateName: swift5
+      output: FontsApp.swift
