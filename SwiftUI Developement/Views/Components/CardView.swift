@@ -13,7 +13,7 @@ struct CardView: View {
                                   Color(UIColor(red: 1, green: 1, blue: 1, alpha: 0)),
                                   Color(UIColor(red: 0, green: 0, blue: 0, alpha: 0.24))]
     var body: some View {
-        
+
         ZStack(alignment: .topLeading) {
             gradient
             Asset.Assets.alphaLogo.swiftUIImage

@@ -1,0 +1,7 @@
+excluded:
+  - DerivedData
+multiline_arguments:
+  first_argument_location: next_line
+  only_enforce_after_first_closure_on_first_line: true
+opt_in_rules:
+	- multiline_arguments
