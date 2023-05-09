@@ -20,7 +20,7 @@ struct CardDetailHeader: View {
                 .font(.custom(FontFamily.SFProDisplay.bold, size: 34))
             if transaction.bird ?? false {
                 Text(L10n.congratulationsOnEarningYourBird)
-                    .foregroundColor(Asset.Colors.grey85.swiftUIColor)
+                    .foregroundColor(Asset.Colors.grey828282.swiftUIColor)
                     .font(.custom(FontFamily.SFProDisplay.regular, size: 13))
             }
 

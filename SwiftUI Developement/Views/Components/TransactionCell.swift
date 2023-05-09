@@ -27,7 +27,7 @@ struct TransactionCell: View {
             }
             .padding([.trailing], 12)
             Text(transaction.transactionDate)
-                .foregroundColor(Asset.Colors.grey85.swiftUIColor)
+                .foregroundColor(Asset.Colors.grey828282.swiftUIColor)
                 .font(.custom(FontFamily.SFProDisplay.regular, size: 11))
 
             Divider()

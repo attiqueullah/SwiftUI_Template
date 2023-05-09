@@ -24,7 +24,7 @@ struct BalanceView: View {
     var balanceInfo: some View {
         VStack(alignment: .leading, spacing: 4.0) {
             Text(L10n.balanceAsOfJuly262021)
-                .foregroundColor(Asset.Colors.grey85.swiftUIColor)
+                .foregroundColor(Asset.Colors.grey828282.swiftUIColor)
                 .font(.custom(FontFamily.SFProDisplay.semibold, size: 11))
             Text(balance)
                 .foregroundColor(Asset.Colors.blackTextColor.swiftUIColor)
