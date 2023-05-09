@@ -154,5 +154,3 @@ private final class BundleToken {
   }()
 }
 // swiftlint:enable convenience_type
-// Re-enable all rules
-// swiftlint:enable all

@@ -42,6 +42,7 @@ internal enum Asset {
     internal static let grey85 = ColorAsset(name: "grey85")
     internal static let greyBack = ColorAsset(name: "greyBack")
     internal static let greyFAFAFA = ColorAsset(name: "greyFAFAFA")
+    internal static let greyText = ColorAsset(name: "greyText")
     internal static let seperator = ColorAsset(name: "seperator")
     internal static let textColor = ColorAsset(name: "textColor")
   }
@@ -206,5 +207,3 @@ private final class BundleToken {
   }()
 }
 // swiftlint:enable convenience_type
-// Re-enable all rules
-// swiftlint:enable all

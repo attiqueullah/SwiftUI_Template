@@ -17,7 +17,7 @@ struct RewardDetailCell: View {
                 .font(.custom(FontFamily.SFProDisplay.regular, size: 17))
             Spacer()
             Text(value)
-                .foregroundColor(Asset.Colors.seperator.swiftUIColor)
+                .foregroundColor(Asset.Colors.greyText.swiftUIColor)
                 .font(.custom(FontFamily.SFProDisplay.regular, size: 17))
                 .padding([.trailing], 12)
         }
