@@ -19,7 +19,7 @@ struct RewardDetailCell: View {
             Text(value)
                 .foregroundColor(Asset.Colors.seperator.swiftUIColor)
                 .font(.custom(FontFamily.SFProDisplay.regular, size: 17))
-                .padding([.trailing],12)
+                .padding([.trailing], 12)
         }
         .frame(height: 44)
     }

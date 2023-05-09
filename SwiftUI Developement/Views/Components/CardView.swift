@@ -12,7 +12,6 @@ struct CardView: View {
     private let gradientColors = [Color(UIColor(red: 0, green: 0, blue: 0, alpha: 0.24)),
                                   Color(UIColor(red: 1, green: 1, blue: 1, alpha: 0)),
                                   Color(UIColor(red: 0, green: 0, blue: 0, alpha: 0.24))]
-    
     var body: some View {
         
         ZStack(alignment: .topLeading) {
@@ -25,7 +24,7 @@ struct CardView: View {
         .frame(height: 221)
         .padding([.leading, .trailing], 16)
     }
-    var gradient : some View {
+    var gradient: some View {
         LinearGradient(colors: gradientColors,
                        startPoint: UnitPoint(x: 0.25, y: 0.5),
                        endPoint: UnitPoint(x: 0.75, y: 0.5))
@@ -40,7 +39,7 @@ struct CardView: View {
         })
         .frame(height: 221)
     }
-    var cardInfo : some View {
+    var cardInfo: some View {
         VStack(alignment: .leading) {
             Spacer()
             cardNumber

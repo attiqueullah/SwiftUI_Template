@@ -16,15 +16,12 @@ struct RewardsInfo: Codable, Equatable {
     let balance: Double?
     var transactions: [Transaction]?
 }
-
 // MARK: - Transaction
 struct Transaction: Codable, Identifiable, Equatable {
     let id, title, status, date: String?
     let amount: Double?
     let bird: Bool?
 }
-
-
 extension Transaction {
     var transactionName: String {
         title ?? ""

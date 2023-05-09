@@ -20,7 +20,7 @@ struct RewardDetails: View {
                         Divider()
                         RewardDetailCell(label: L10n.date, value: transaction.transactionDate)
                     }
-                    .padding([.leading,.top,.bottom],12)
+                    .padding([.leading,.top,.bottom], 12)
 
                 })
                 .frame(height: 90)
