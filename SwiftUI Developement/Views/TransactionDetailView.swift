@@ -8,16 +8,23 @@
 import SwiftUI
 import AlertToast
 struct TransactionDetailView: View {
+    
     @ObservedObject private var viewModel: TransactionDetailViewModel
     init(viewModel: TransactionDetailViewModel) {
         self.viewModel = viewModel
     }
     var body: some View {
         switch viewModel.transaction {
-        case .idle: EmptyView()
-        case .loading: ProgressView("Please wait…")
-        case .success(let transaction): transactionDetails(transaction: transaction)
-        case .failure(let error): AlertToast(type: .error(.accentColor), title: error.localizedDescription)
+        case .idle:
+            EmptyView()
+        case .loading:
+            ProgressView("Please wait…")
+        case .success:
+            EmptyView()
+        case .list(let transaction):
+            transactionDetails(transaction: transaction)
+        case .failure(let error):
+            AlertToast(type: .error(.accentColor), title: error.localizedDescription)
         }
     }
 
@@ -30,6 +37,7 @@ struct TransactionDetailView: View {
         .navigationBarTitleDisplayMode(.inline)
         .padding([.leading, .trailing], 16)
     }
+    
 }
 
 struct TransactionDetailView_Previews: PreviewProvider {

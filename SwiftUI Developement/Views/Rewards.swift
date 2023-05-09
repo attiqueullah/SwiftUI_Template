@@ -16,10 +16,16 @@ struct Rewards: View {
         NavigationView(content: {
             VStack(content: {
                 switch viewModel.rewards {
-                case .idle: EmptyView()
-                case .loading: ProgressView("Please wait…")
-                case .success(let reward): RewardsInfoView(reward: reward, viewModel: viewModel)
-                case .failure(let error): AlertToast(type: .error(.accentColor), title: error.localizedDescription)
+                case .idle:
+                    EmptyView()
+                case .loading:
+                    ProgressView("Please wait…")
+                case .success(let reward):
+                    RewardsInfoView(reward: reward, viewModel: viewModel)
+                case .list:
+                    EmptyView()
+                case .failure(let error):
+                    AlertToast(type: .error(.accentColor), title: error.localizedDescription)
                 }
             })
             .navigationTitle(L10n.rewards)

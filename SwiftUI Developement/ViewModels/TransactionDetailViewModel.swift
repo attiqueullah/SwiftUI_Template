@@ -9,7 +9,7 @@ import Foundation
 import Combine
 
 final class TransactionDetailViewModel: BaseViewModel {
-    @Published private(set) var transaction: TransactionState = .idle
+    @Published private(set) var transaction: RewardsState = .idle
     private var cancellables: [AnyCancellable] = []
 
     init(id: String) {
@@ -25,19 +25,19 @@ final class TransactionDetailViewModel: BaseViewModel {
             self.transaction = state
         }).store(in: &cancellables)
     }
-    private func transform(id: String) -> TransactionViewModelOuput {
+    private func transform(id: String) -> RewardsViewModelOuput {
         cancellables.forEach { $0.cancel() }
         cancellables.removeAll()
 
         let details = self.repository.transactionsDetails(id: id)
-            .map({ result -> TransactionState in
+            .map({ result -> RewardsState in
                 switch result {
-                case .success(let transaction): return .success(transaction)
+                case .success(let transaction): return .list(transaction)
                 case .failure(let error): return .failure(error)
                 }
             })
 
-        let initialState: TransactionViewModelOuput = .just(.loading)
+        let initialState: RewardsViewModelOuput = .just(.loading)
 
         return Publishers.Merge(initialState, details).removeDuplicates().eraseToAnyPublisher()
     }
