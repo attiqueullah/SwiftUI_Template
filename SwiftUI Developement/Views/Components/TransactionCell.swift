@@ -8,7 +8,6 @@
 import SwiftUI
 
 struct TransactionCell: View {
-    
     let transaction: Transaction
     var body: some View {
         VStack(alignment: .leading, spacing: 2) {
