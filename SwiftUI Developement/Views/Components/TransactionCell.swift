@@ -8,6 +8,7 @@
 import SwiftUI
 
 struct TransactionCell: View {
+    
     let transaction: Transaction
     var body: some View {
         VStack(alignment: .leading, spacing: 2) {
@@ -29,15 +30,14 @@ struct TransactionCell: View {
             Text(transaction.transactionDate)
                 .foregroundColor(Asset.Colors.grey828282.swiftUIColor)
                 .font(.custom(FontFamily.SFProDisplay.regular, size: 11))
-
             Divider()
                 .background(Asset.Colors.divider.swiftUIColor)
                 .padding([.top], 12)
         }
         .padding([.leading, .top], 12)
         .frame(height: 58)
-
     }
+    
 }
 
 struct TransactionCell_Previews: PreviewProvider {
